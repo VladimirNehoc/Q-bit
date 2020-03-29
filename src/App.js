@@ -18,7 +18,7 @@ class ToDoList extends React.Component {
                 return
             }
             let state = this.state.lines
-            state = _.concat(state, text)
+            state.unshift(text)
             this.setState({lines: state})
             id.value = ''
         } else if (action === 'delete') {

@@ -4,8 +4,8 @@ import Button from '../components/open'
 import Add from '../components/add'
 
 export default function List(props) {
-    let state = _.clone(props.state)
-    _.reverse(state)
+    let state = props.state
+    
     return (
         <ul className='container__list'>
             <Add changeState={props.changeState}/>
