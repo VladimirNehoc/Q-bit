@@ -1,9 +1,11 @@
 import React from 'react'
 
 
-export default function Open(props) {
+function Delete(props) {
     const id = props.id
     return(
         <button className='container__delete' onClick={() => props.changeState('delete', '', id)}>╳</button>
     )
 }
+
+export default Delete

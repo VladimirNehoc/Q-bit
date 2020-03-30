@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Add(props) {
+function Add(props) {
     return(
         <li className='container__line container__line_add' 
         onKeyUp={(e) => {
@@ -12,3 +12,5 @@ export default function Add(props) {
         </li>
     )
 }
+
+export default Add

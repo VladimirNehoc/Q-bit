@@ -1,9 +1,9 @@
 import React from 'react'
 import * as _ from 'lodash'
-import Button from '../components/open'
+import Button from '../components/delete'
 import Add from '../components/add'
 
-export default function List(props) {
+function List(props) {
     let state = props.state
     
     return (
@@ -23,3 +23,5 @@ export default function List(props) {
         </ul>
     )
 }
+
+export default List
