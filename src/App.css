@@ -20,6 +20,10 @@ body {
     font-weight: 500;
 }
 
+.header__link_active {
+    background-color: rgb(83, 83, 83);
+}
+
 .header__link:hover {
     color: rgb(71, 71, 71);
 }
@@ -48,6 +52,7 @@ body {
     border: 1px solid rgb(189, 189, 189);
     display: flex;
     flex-direction: column;
+    background-color: rgb(226, 186, 244);
 }
 
 .container__button {
@@ -110,22 +115,35 @@ body {
     max-height: 300px;
 }
 
-.container__line:nth-child(2n + 2) {
+.container__line_odd {
     background-color: rgb(226, 186, 244);
 }
 
-.container__line:nth-child(2n + 1) {
+.container__line_even {
     background-color: rgb(245, 204, 242);
 }
 
 .container__line {
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
     position: relative;
+}
+
+.container__line_span {
+    position: relative;
+    left: 20px;
 }
 
 .container__line_add {
     padding: 0;
     cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
 .container__input {
