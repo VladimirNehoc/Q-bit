@@ -66,6 +66,13 @@ class ToDoList extends React.Component {
         }
     }
 
+    activeLink(e) {
+        if (e.target.classList.contains('header__link')) {
+            document.querySelectorAll('.header__link').forEach(el => el.classList.remove('header__link_active'))
+            e.target.classList.add('header__link_active')
+        }
+    }
+
     slideList() {
         $('.container__collapsible').slideToggle(400, () => { document.querySelector('.container__button').toggleAttribute('done') })  
     }
@@ -73,7 +80,7 @@ class ToDoList extends React.Component {
     render() {
         return (
             <div>
-                <div className='header'>
+                <div className='header' onClick={this.activeLink}>
                     <Link className='header__link' to='/time'>TIME</Link>
                     <Link className='header__link' to='/calendar'>DATE</Link>
                     <Link className='header__link' to='/'>LIST</Link>

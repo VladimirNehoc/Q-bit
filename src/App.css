@@ -21,11 +21,11 @@ body {
 }
 
 .header__link_active {
-    background-color: rgb(83, 83, 83);
+    color: rgb(100, 100, 100);
 }
 
 .header__link:hover {
-    color: rgb(71, 71, 71);
+    color: rgb(100, 100, 100);
 }
 
 .calendar {
