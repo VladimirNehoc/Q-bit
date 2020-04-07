@@ -8,7 +8,7 @@ function Add(props) {
                 props.changeState('add', e.target.value, e.target) // Передаю елемент в id чтобы в самой функции не прописывать 
             }
         }}>
-        <input className='container__input' placeholder='Add New ToDo'></input>
+            <input className='container__input' placeholder='Add New ToDo'></input>
         </div>
     )
 }
