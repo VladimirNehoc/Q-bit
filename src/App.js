@@ -86,7 +86,7 @@ const ToDoList = () => {
                     <Route exact path='/' render={() => (
                         <div className='container'>
                         <div className='container__head'>
-                            <div className='container__text'>TO-DO LIST</div>  
+                            <div className='container__text'>TO-DO LIST branch new1</div>  
                             <button className='container__button' onClick={slideList}><span>⌃</span></button>
                         </div>
                         <List state={lines} changeState={changeState} />
